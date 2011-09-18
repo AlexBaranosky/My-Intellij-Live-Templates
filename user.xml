@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="user">
-  <template name="gw" value="given($MOCK_OBJECT$.$METHOD$($ARGS$)).willReturn($RETURN_VALUE$);  " description="Given-Will for Mockito" toReformat="true" toShortenFQNames="true">
+  <template name="gw" value="given($MOCK_OBJECT$.$METHOD$($ARGS$)).willReturn($RETURN_VALUE$);  " description="Given-Will for Mockito" toReformat="false" toShortenFQNames="true">
     <variable name="MOCK_OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
@@ -37,3 +37,5 @@
     </context>
   </template>
 </templateSet>
+
+
