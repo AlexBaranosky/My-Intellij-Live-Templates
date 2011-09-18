@@ -12,3 +12,31 @@ How to Use Them
 3. To ~/.IdeaC10/config/templates/user.xml append my <template> nodea to your <templateSet> node, and save.
 
 4. Enjoy the goodness.
+
+Java Templates
+==============
+gw
+given($MOCK_OBJECT$.$METHOD$($ARGS$)).willReturn($RETURN_VALUE$);
+
+sc
+public static class $CLASS_NAME$ { $CODE$ }
+
+a lot more to come, from my work machine.
+
+Clojure Templates
+=================
+d
+(def $NAME$ $EXPR$)
+
+pd
+(def ^{:private true} $NAME$ $EXPR$)
+
+f
+(defn $NAME$ [$ARGS$] $EXPR$)
+
+pf
+(defn- $NAME$ [$ARGS$] $EXPR$)
+
+Scala Templates
+===============
+coming soon...

@@ -89,8 +89,9 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="pd" value="(def ^{:private true} $NAME$ $EXPR)" description="(def private ... )" toReformat="true" toShortenFQNames="true">
+  <template name="pd" value="(def ^{:private true} $NAME$ $EXPR$)" description="(def private ... )" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="false" />
       <option name="JAVA_COMMENT" value="false" />
