@@ -1,4 +1,4 @@
-These are the Intellij Live Templates I like to use to make developing in Java and Scala more fluid.  Why spend your time/effort typing, when you could use it thinking about the problem at hand?
+These are the Intellij Live Templates I like to use to make developing in Java, Scala and Clojure more fluid.  Why spend your time/effort typing, when you could use it thinking about the problem at hand?
 
 I've kept all my live templates to 2 unique chars, to be clear 'tst' has two unique chars =)
 
