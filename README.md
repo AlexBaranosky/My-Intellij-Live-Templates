@@ -16,9 +16,11 @@ How to Use Them
 Java Templates
 ==============
 gw
+
      given($MOCK_OBJECT$.$METHOD$($ARGS$)).willReturn($RETURN_VALUE$);
 
 sc
+
      public static class $CLASS_NAME$ { $CODE$ }
 
 a lot more to come, from my work machine.
@@ -26,15 +28,19 @@ a lot more to come, from my work machine.
 Clojure Templates
 =================
 d
+
      (def $NAME$ $EXPR$)
 
 pd
+
      (def ^{:private true} $NAME$ $EXPR$)
 
 f
+
      (defn $NAME$ [$ARGS$] $EXPR$)
 
 pf
+
      (defn- $NAME$ [$ARGS$] $EXPR$)
 
 Scala Templates
