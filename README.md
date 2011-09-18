@@ -1,6 +1,6 @@
 These are the Intellij Live Templates I like to use to make developing in Java, Scala and Clojure more fluid.  Why spend your time/effort typing, when you could use it thinking about the problem at hand?
 
-I've kept all my live templates to 2 unique chars, to be clear 'tst' has two unique chars =)
+I've kept all my live templates to 2-3 chars for consciseness.
 
 How to Use Them
 ===============
@@ -13,17 +13,6 @@ How to Use Them
 
 4. Enjoy the goodness.
 
-Java Templates
-==============
-gw
-
-     given($MOCK_OBJECT$.$METHOD$($ARGS$)).willReturn($RETURN_VALUE$);
-
-sc
-
-     public static class $CLASS_NAME$ { $CODE$ }
-
-a lot more to come, from my work machine.
 
 Clojure Templates
 =================
@@ -43,6 +32,34 @@ pf
 
      (defn- $NAME$ [$ARGS$] $EXPR$)
 
+Java Templates
+==============
+gw
+
+     given($MOCK_OBJECT$.$METHOD$($ARGS$)).willReturn($RETURN_VALUE$);
+
+sc
+
+     public static class $CLASS_NAME$ { $CODE$ }
+
+tst
+
+ae
+
+ane
+
+an
+
+as
+
+    all coming soon...
+
 Scala Templates
 ===============
-coming soon...
+tst
+
+s
+
+sn
+
+     coming soon...
