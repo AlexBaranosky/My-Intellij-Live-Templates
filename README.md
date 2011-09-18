@@ -7,7 +7,7 @@ How to Use Them
 
 1. Open user.xml, copy out all of the <template> nodes, out of the <templateSet>
 
-2. Go to ~/.IdeaC10/config/templates/user.xml, and append my <template> nodes to your <templateSet>  (on Windows, the .Ideaxyz folder isprobably in your home directory, but I haven't checked.  Also, it will have a slightly different name depending on version number, or whether you are using Community edition or Ultimate edition.
+2. Go to ~/.IdeaC10/config/templates/user.xml (on Windows, the .Idea[xyz] folder is probably in your home directory, but I haven't checked.  Also, it will have a slightly different name depending on version number, or whether you are using Community edition or Ultimate edition.
 
 3. To ~/.IdeaC10/config/templates/user.xml append my <template> nodea to your <templateSet> node, and save.
 
