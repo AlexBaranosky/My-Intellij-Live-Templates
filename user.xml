@@ -19,7 +19,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="sc" value="public static class $CLASS_NAME$ { $CODE$ }" description="Public Static Class" toReformat="true" toShortenFQNames="true">
+  <template name="sc" value="public static class $CLASS_NAME$ { &#10;    $CODE$ &#10;}&#10;    " description="Public Static Class" toReformat="true" toShortenFQNames="true">
     <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -53,7 +53,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="f" value="(defn $NAME$ [$ARGS$] $EXPR$)" description="(defn ...)" toReformat="true" toShortenFQNames="true">
+  <template name="f" value="(defn $NAME$ [$ARGS$] &#10;  $EXPR$)" description="(defn ...)" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
@@ -71,7 +71,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="pf" value="(defn- $NAME$ [$ARGS$] $EXPR$)" description="(defn- ...)" toReformat="true" toShortenFQNames="true">
+  <template name="pf" value="(defn- $NAME$ [$ARGS$] &#10;  $EXPR$)" description="(defn- ...)" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
@@ -92,6 +92,76 @@
   <template name="pd" value="(def ^{:private true} $NAME$ $EXPR$)" description="(def private ... )" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="mk" value="mock($CLASS_NAME$.class);" description="Mockito mock" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="fa" value="(fact &quot;$TITLE$&quot;&#10;  ($EXPR$) =&gt; $RESULT$)" description="Midje fact" toReformat="true" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="p" value="(provided&#10;  ($EXPR$) =&gt; $RESULT$)" description="Midje provided statement" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="tf" value="(tabular&#10;  (fact &quot;$TITLE$&quot;&#10;    ($EXPR$) =&gt; $RESULT$)&#10;  &#10;  $TABLE$)" description="Midje tabular" toReformat="true" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="false" />
       <option name="JAVA_COMMENT" value="false" />

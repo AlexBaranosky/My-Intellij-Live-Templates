@@ -32,6 +32,24 @@ pf
 
      (defn- $NAME$ [$ARGS$] $EXPR$)
 
+fa
+
+    (fact "$TITLE$"
+      ($EXPR$) => $RESULT$)
+
+tf
+
+     (tabular
+       (fact "$TITLE$"
+         ($EXPR$) => $RESULT$)
+
+       $TABLE$)
+
+p
+
+    (provided
+      ($EXPR$) => $RESULT$)
+
 Java Templates
 ==============
 gw
@@ -40,7 +58,13 @@ gw
 
 sc
 
-     public static class $CLASS_NAME$ { $CODE$ }
+     public static class $CLASS_NAME$ {
+         $CODE$
+    }
+
+mk
+
+     mock($CLASS_NAME$.class);
 
 tst
 
@@ -61,5 +85,7 @@ tst
 s
 
 sn
+
+tbl
 
      coming soon...
