@@ -108,8 +108,14 @@ tbl
 
 tst
 
-s
+    test("$TITLE$") {
+        $TEST_CODE$
+    }
 
-sn
+sb
 
-     coming soon...
+    should be ($EXPECTED$)
+
+snb
+
+     should not be ($EXPECTED$)
