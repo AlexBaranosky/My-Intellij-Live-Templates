@@ -66,17 +66,32 @@ mk
 
      mock($CLASS_NAME$.class);
 
+el
+
+     element("$NAME$", $BODY$)
+
 tst
+
+     @Test
+     public void $NAME$() {
+         $TEST_CODE$
+     }
 
 ae
 
+     assertThat($ACTUAL$, equalTo($EXPECTED$));
+
 ane
+
+     assertThat($ACTUAL$, not(equalTo($EXPECTED$)));
 
 an
 
+     assertNull($ACTUAL$);
+
 as
 
-    all coming soon...
+     assertThat($EXPR$, hasSize($EXPECTED_SIZE$));
 
 Scala Templates
 ===============
