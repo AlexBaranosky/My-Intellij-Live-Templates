@@ -80,12 +80,21 @@ as
 
 Scala Templates
 ===============
+tbl
+
+    val testCases = new org.scalatest.prop.TableDrivenPropertyChecks.Table(
+        ($TITLE_ROW$),
+        ($ROW_1$),
+        ($ROW_2$))
+
+    forAll(testCases) { case ($TEST_CASE_DESTRUCTURING$) =>
+        $TEST_EXPR$
+    }
+
 tst
 
 s
 
 sn
-
-tbl
 
      coming soon...
